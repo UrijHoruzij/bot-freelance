@@ -1,0 +1,17 @@
+{
+  "name": "Bot-freelance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Urij Horuzij",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0"
+  }
+}
