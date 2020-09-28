@@ -12,7 +12,6 @@ const getProject = async () => {
   await data.map((item) => {
     let info;
     if (item.attributes.employer) {
-      console.log(item.attributes.employer);
       info = {
         name: item.attributes.name,
         skills: item.attributes.skills,
