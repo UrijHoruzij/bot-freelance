@@ -1,5 +1,10 @@
 const axios = require("axios");
 require("dotenv").config();
+var daemon = require("daemonize2").setup({
+    main: "index.js",
+    name: "bot-freelance",
+    pidfile: "botfreelance.pid"
+});
 
 axios.defaults.headers.common["Authorization"] = "Bearer " + process.env.TOKEN;
 
@@ -143,4 +148,6 @@ const bot = async () => {
   }
 };
 
+daemon.start();
 bot();
+setInterval(()=>bot(),1000*60*60);

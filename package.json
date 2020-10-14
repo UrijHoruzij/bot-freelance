@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.20.0",
+    "daemonize2": "^0.4.2",
     "dotenv": "^8.2.0"
   }
 }
